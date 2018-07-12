@@ -1,5 +1,13 @@
 <?php 
+require 'environment.php';
 
+$config = array();
+
+if(ENVIRONMENT == 'development'){
+    
+} else {
+    
+}
 
 try {
     
