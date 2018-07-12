@@ -5,14 +5,14 @@ $config = array();
 
 if(ENVIRONMENT == 'development'){
     define("BASE_URL", "http://localhost/estrutura_mvc");
-    $config['dbname'] = 'classificados';
+    $config['dbname'] = 'estrutura_mvc';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'admin';
     $config['dbpass'] = 'admin@12';
     
 } else {
     define("BASE_URL", "http://localhost/estrutura_mvc");
-    $config['dbname'] = 'classificados';
+    $config['dbname'] = 'estrutura_mvc';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'admin';
     $config['dbpass'] = 'admin@12';
