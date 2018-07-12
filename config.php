@@ -18,6 +18,8 @@ if(ENVIRONMENT == 'development'){
 
 try {
     
+    $pdo = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'], $config['dbuser'], $config['dbpass']);
+    
 } catch ( PDOException $e) {
     echo "ERRO: ".$e->getMessage();
     exit;
