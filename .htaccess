@@ -2,3 +2,9 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /estrutura_mvc/index.php?url=$1 [QSA,L]
+
+digita assim: 
+http://localhost/estrutura_mvc/sobre
+
+Internamente o sistema monta assim:
+http://localhost/estrutura_mvc/index.php?url=sobre
