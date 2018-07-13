@@ -13,11 +13,14 @@ class Core {
             $url = explode('/', $url);
             array_shift($url);
             
-            print_r($url);
+            $currentController = $url[0].'Controller';
         } else {
             $currentController = 'homeController';
             $currentAction = 'index';
         }
+        
+        echo 'CONTROLLER: '.$currentController.'<BR/>';
+        echo "ACTION: ".$currentAction.'<BR/>';
         
     }
 }
