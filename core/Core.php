@@ -10,7 +10,9 @@ class Core {
         }
         
         if (!empty($url) && $url != '/'){
+            $url = explode('/', $url);
             
+            print_r($url);
         } else {
             $currentController = 'homeController';
             $currentAction = 'index';
