@@ -4,7 +4,12 @@ class Core {
     
     public function run(){
         
-        echo "URL: ".$_GET['url'];
+        $url = '/';
+        if (isset($_GET['url'])){
+            $url .= $_GET['url'];
+        }
+        
+        echo 'URL: '.$url;
         
     }
 }
