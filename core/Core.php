@@ -9,7 +9,12 @@ class Core {
             $url .= $_GET['url'];
         }
         
-        echo 'URL: '.$url;
+        if (!empty($url) && $url != '/'){
+            
+        } else {
+            $currentController = 'homeController';
+            $currentAction = 'index';
+        }
         
     }
 }
