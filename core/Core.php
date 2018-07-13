@@ -28,7 +28,7 @@ class Core {
             if (count($url) > 0){
                 $params = $url;
             }
-            print_r($url);
+            
             
         } else {
             $currentController = 'homeController';
@@ -37,5 +37,6 @@ class Core {
         
         $c = new $currentController();
         
+        call_user_func_array(array($c,$currentAction), $params);
     }
 }
