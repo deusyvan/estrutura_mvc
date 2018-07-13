@@ -11,6 +11,7 @@ class Core {
         
         if (!empty($url) && $url != '/'){
             $url = explode('/', $url);
+            array_shift($url);
             
             print_r($url);
         } else {
