@@ -2,9 +2,9 @@
 class homeController extends controller{
     
     public function index(){
-        
+        $anuncios = new Anuncios(); 
         $dados = array(
-           'quantidade' => 5,
+           'quantidade' => $anuncios->getQuantidade(),
             'nome' => 'Deusyvan',
             'idade' => '45'
         );
