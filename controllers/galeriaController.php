@@ -5,7 +5,7 @@ class galeriaController extends controller{
         $dados = array
             (     'qt' => 129
               );
-        $this->loadView('galeria', $dados);
+        $this->loadTemplate('galeria', $dados);
     }
     
 }
