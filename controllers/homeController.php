@@ -9,7 +9,7 @@ class homeController extends controller{
             'idade' => '45'
         );
       
-        $this->loadView('home', $dados);
+        $this->loadTemplate('home', $dados);
         
     }
    
