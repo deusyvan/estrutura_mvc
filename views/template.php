@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Meu Site</title>
+		<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/assets/css/style.css" />
 	</head>
 	
 	<body>
