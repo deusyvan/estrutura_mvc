@@ -4,6 +4,7 @@ require 'environment.php';
 $config = array();
 
 if(ENVIRONMENT == 'development'){
+    
     define("BASE_URL", "http://localhost/estrutura_mvc/");
     $config['dbname'] = 'estrutura_mvc';
     $config['host'] = 'localhost';
@@ -11,6 +12,7 @@ if(ENVIRONMENT == 'development'){
     $config['dbpass'] = 'admin@12';
     
 } else {
+    
     define("BASE_URL", "http://meusite.com.br/");
     $config['dbname'] = 'estrutura_mvc';
     $config['host'] = 'localhost';
