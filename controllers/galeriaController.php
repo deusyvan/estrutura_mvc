@@ -1,13 +1,13 @@
 <?php 
-class galeriaController{
+class galeriaController extends controller{
     
     public function index(){
-        echo "Listando todas as galerias";
+        $dados = array
+            (     'qt' => 129
+              );
+        $this->loadView('galeria', $dados);
     }
     
-    public function abrir($id){
-        echo "Abrindo galeria: ".$id;
-    }
 }
 
 ?>
