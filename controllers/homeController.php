@@ -3,9 +3,11 @@ class homeController extends controller{
     
     public function index(){
         
-        $dados = array();
+        $dados = array(
+           'quanitdade' => 5 
+        );
       
-        $this->loadView('home');
+        $this->loadView('home', $dados);
         
     }
    
