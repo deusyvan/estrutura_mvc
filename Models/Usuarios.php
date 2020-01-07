@@ -1,4 +1,8 @@
 <?php 
+namespace Models;
+
+use \Core\Model;
+use PDO;
 
 class  Usuarios extends Model{
     public function getAll(){
