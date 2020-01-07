@@ -1,11 +1,16 @@
 <?php 
 
-class  Usuarios{
-    public function getNome(){
-        return 'Pedro';
-    }
-    
-    public  function  getIdade (){
-        return 12;
+class  Usuarios extends model{
+    public function getAll(){
+        $array = array();
+        
+        $sql = "SELECT * FROM usuarios";
+        $sql = $this->db->query($sql);
+        
+        if($sql->rowCount() > 0){
+            $array = $sql->fetchAll(PDO::FETCH_ASSOC);
+        }
+        
+        return $array;
     }
 }
