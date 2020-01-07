@@ -1,6 +1,6 @@
 <?php 
 
-class  Usuarios extends model{
+class  Usuarios extends Model{
     public function getAll(){
         $array = array();
         
